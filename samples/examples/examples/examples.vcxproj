@@ -130,6 +130,7 @@
     <ClCompile Include="io.cpp" />
     <ClCompile Include="caculate.cpp" />
     <ClCompile Include="date.cpp" />
+    <ClCompile Include="point.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="declare.h" />

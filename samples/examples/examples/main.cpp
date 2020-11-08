@@ -13,5 +13,7 @@ void main() {
 	//char * s = {};
 	//getDayOfYear(s);
 	arrayInit();
+	//arrayDinit();
+	//p_caculate1();
 	system("pause");
 }
