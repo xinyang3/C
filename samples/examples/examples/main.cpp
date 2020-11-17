@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "declare.h"
 
+extern void print();
+
 void main() {
 	// hello();
 
@@ -12,8 +14,12 @@ void main() {
 
 	//char * s = {};
 	//getDayOfYear(s);
-	arrayInit();
+	//arrayInit();
 	//arrayDinit();
 	//p_caculate1();
+	//calcute_2();
+	//calcute_3();
+	calcute_4();
+	print();
 	system("pause");
 }

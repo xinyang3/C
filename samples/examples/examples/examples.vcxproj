@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClCompile Include="array.cpp" />
     <ClCompile Include="circle.cpp" />
+    <ClCompile Include="funcn.cpp" />
     <ClCompile Include="hello.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="io.cpp" />
