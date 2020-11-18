@@ -45,13 +45,10 @@
     <ClCompile Include="funcn.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="ponit_double.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="chengfa.cpp">
+    <ClCompile Include="day1_array.cpp">
       <Filter>源文件\homeworks</Filter>
     </ClCompile>
-    <ClCompile Include="main_hw.cpp">
+    <ClCompile Include="mian_day1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

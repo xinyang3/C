@@ -125,12 +125,14 @@
   <ItemGroup>
     <ClCompile Include="array.cpp" />
     <ClCompile Include="circle.cpp" />
+    <ClCompile Include="day1_array.cpp" />
     <ClCompile Include="funcn.cpp" />
     <ClCompile Include="hello.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="io.cpp" />
     <ClCompile Include="caculate.cpp" />
     <ClCompile Include="date.cpp" />
+    <ClCompile Include="mian_day1.cpp" />
     <ClCompile Include="point.cpp" />
   </ItemGroup>
   <ItemGroup>
