@@ -4,7 +4,7 @@
 
 extern void print();
 
-void main() {
+//void main() {
 	// hello();
 
 	//io();
@@ -16,10 +16,10 @@ void main() {
 	//getDayOfYear(s);
 	//arrayInit();
 	//arrayDinit();
-	//p_caculate1();
 	//calcute_2();
 	//calcute_3();
-	calcute_4();
-	print();
-	system("pause");
-}
+	//calcute_4();
+	//print();
+
+	//point_db_ary();
+//}
