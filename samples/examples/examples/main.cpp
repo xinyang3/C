@@ -4,7 +4,7 @@
 
 extern void print();
 
-//void main() {
+void main() {
 	// hello();
 
 	//io();
@@ -23,4 +23,5 @@ extern void print();
 
 	//point_db_ary();
 	link_test();
-//}
+	system("pause");
+}

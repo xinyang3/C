@@ -3,7 +3,7 @@
 
 extern void array_test();
 
-void main() {
-	array_test();
-	system("pause");
-}
+//void main() {
+//	array_test();
+//	system("pause");
+//}
