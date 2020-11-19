@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "declare.h"
+#include "extern_declare.h"
 
 extern void print();
 
@@ -22,4 +22,5 @@ extern void print();
 	//print();
 
 	//point_db_ary();
+	link_test();
 //}

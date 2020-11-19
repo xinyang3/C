@@ -22,32 +22,32 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{3D223493-B068-4CB0-8D5A-C4FDD9C62E32}</ProjectGuid>
     <RootNamespace>examples</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -124,19 +124,24 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="array.cpp" />
-    <ClCompile Include="circle.cpp" />
-    <ClCompile Include="day1_array.cpp" />
-    <ClCompile Include="funcn.cpp" />
+    <ClCompile Include="hw_main.cpp" />
+    <ClCompile Include="hw_main_day1.cpp" />
+    <ClCompile Include="link_table.cpp" />
+    <ClCompile Include="struct_test.cpp" />
+    <ClCompile Include="while_circle.cpp" />
+    <ClCompile Include="function.cpp" />
     <ClCompile Include="hello.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="io.cpp" />
-    <ClCompile Include="caculate.cpp" />
+    <ClCompile Include="print_io.cpp" />
+    <ClCompile Include="calculate.cpp" />
     <ClCompile Include="date.cpp" />
-    <ClCompile Include="mian_day1.cpp" />
     <ClCompile Include="point.cpp" />
+    <ClCompile Include="point_double.cpp" />
+    <ClCompile Include="hw_day1_chengfa.cpp" />
+    <ClCompile Include="hw_day1_array.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="declare.h" />
+    <ClInclude Include="extern_declare.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -30,3 +30,6 @@ extern void point_db_ary();
 
 // homework
 extern void print_chengfa();
+
+
+extern void link_test();

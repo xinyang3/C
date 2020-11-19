@@ -24,13 +24,13 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="io.cpp">
+    <ClCompile Include="print_io.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="caculate.cpp">
+    <ClCompile Include="calculate.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="circle.cpp">
+    <ClCompile Include="while_circle.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="date.cpp">
@@ -42,19 +42,34 @@
     <ClCompile Include="point.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="funcn.cpp">
+    <ClCompile Include="point_double.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="day1_array.cpp">
+    <ClCompile Include="function.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hw_day1_array.cpp">
       <Filter>源文件\homeworks</Filter>
     </ClCompile>
-    <ClCompile Include="mian_day1.cpp">
+    <ClCompile Include="hw_day1_chengfa.cpp">
+      <Filter>源文件\homeworks</Filter>
+    </ClCompile>
+    <ClCompile Include="hw_main.cpp">
+      <Filter>源文件\homeworks</Filter>
+    </ClCompile>
+    <ClCompile Include="hw_main_day1.cpp">
+      <Filter>源文件\homeworks</Filter>
+    </ClCompile>
+    <ClCompile Include="struct_test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="link_table.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="declare.h">
-      <Filter>源文件</Filter>
+    <ClInclude Include="extern_declare.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
