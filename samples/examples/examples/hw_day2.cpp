@@ -102,11 +102,84 @@ void convert_jinzhi_10To2(int t) {
 	while (i >= 0) {
 		printf("%d", resu[i]);
 	}
-
 }
+// 2 -> 10
+void convert_jinzhi_2To_10(char * c) {
+	int resu = 0;
+	int i = 0;
+	int length = 0;
+	while (c[length] != '\0')
+	{
+		length++;
+	}
+	for (int i = length-1; i >= 0; i--)
+	{
+		resu += (c[i] - '0') * (1 << (length - 1 - i));
+	}
+	printf("%d", resu);
+}
+
+// 4.	统计一个整数对应的二进制数的1的个数。输入一个整数（可正可负）， 输出该整数的二进制包含1的个数
+void count_10To_2(int t) {
+	int yushu;
+	int resu[] = { 0 };
+
+	int count = 0;
+	while (t != 0) {
+		yushu = t % 2;
+		t = t / 2;
+
+		if (yushu == 1) {
+			count++;
+		}
+	}
+	printf("%d", count);
+}
+// 5 (1)有101个整数，其中有50个数出现了两次，1个数出现了一次， 找出出现了一次的那个数。
+typedef struct Number {
+	int data;
+	int count;
+} Number, * PNumber;
+
+void count_number() {
+	int array[50] = {100, 100, 1};
+	Number numbers[2];
+	for (size_t i = 0; i < sizeof(array) / sizeof(int); i++)
+	{
+
+		for (size_t j = 0; j < 2; j++)
+		{
+			if (numbers[j].data == array[i]) {
+				numbers[j].count++;
+			}
+			else
+			{
+				Number num;
+				num.count = 1;
+				num.data = array[i];
+				numbers[j] = num;
+			}
+		}
+	}
+
+	for (size_t i = 0; i < 2; i++)
+	{
+		if (numbers[i].count == 1) {
+			printf("count one = %d", numbers[i].data);
+		}
+	}
+}
+
 void convert_jinzhi() {
 	int d;
 	while (scanf("%d", &d) != NULL) {
-		convert_jinzhi_10To2(d);
+		//convert_jinzhi_10To2(d);
+		count_10To_2(d);
 	}
+
+	/*char c[] = {'\0'};
+	while (scanf("%s", c) != NULL)
+	{
+		convert_jinzhi_2To_10(c);
+	}*/
 }
