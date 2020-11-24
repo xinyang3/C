@@ -58,6 +58,21 @@ void array_abs_small(int * p, int size) {
 }
 // 给定含有1001个元素的数组，其中存放了1-1000之内的整数，只有一个整数是重复的，请找出这个数
 void array_find_ducpy() {
+	int array[1001] = { 100, 200, 101, 1, 3, 4, 5, 80, 200 };
+	int result[1001] = { 0 };
+	int repeatNumber = -1;
+	for (size_t i = 0; i < sizeof(array) / sizeof(int); i++)
+	{
+		int item = array[i];
+		result[item]++;
+		if (result[item] > 1) {
+			repeatNumber = item;
+			break;
+		}
+	}
+	if (repeatNumber > -1) {
+		printf("重复的数是%d\n", repeatNumber);
+	}
 
 }
 void array_test() {
@@ -65,6 +80,7 @@ void array_test() {
 	//print_array_max(a, 10);
 	//print_array_num_count(a, 7);
 
-	int a[10] = { 10, 20, 101, 200, 100, 50, 99 };
-	array_abs_small(a, 7);
+	/*int a[10] = { 10, 20, 101, 200, 100, 50, 99 };
+	array_abs_small(a, 7);*/
+	array_find_ducpy();
 }
