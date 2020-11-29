@@ -72,6 +72,9 @@
     <ClCompile Include="hw_main_day2.cpp">
       <Filter>源文件\homeworks</Filter>
     </ClCompile>
+    <ClCompile Include="hw_day3.cpp">
+      <Filter>源文件\homeworks</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="extern_declare.h">
