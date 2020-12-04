@@ -36,25 +36,119 @@ void instert_link_tail(LNode** head, LinkList* tail, int data) {
 	}
 }
 
+void insert_link_sort(LinkList * head, LinkList * tail, int data) {
+	LinkList nplink = (LinkList)calloc(1, sizeof(LNode));
+	nplink->data = data;
+	nplink->next = NULL;
+
+	LinkList pcur = *head, pre = *head;;
+
+	if (!*head) {
+		*head = nplink;
+		*tail = nplink;
+	}
+	else if (data < (*head)->data) // 头节点之前插入
+	{
+		nplink->next = *head;
+		*head = nplink;
+	}
+	else if (data >= (*head)->data) // 头节点之后
+	{
+		while (pcur) // 中间节点
+		{
+			if (pcur->data > data) {
+				pre->next = nplink;
+				nplink->next = pcur;
+				break;
+			}
+			pre = pcur;
+			pcur = pcur->next;
+		}
+
+		if (!pcur) // 遍历到链表结尾
+		{
+			pre->next = nplink;
+			*tail = nplink;
+		}
+	}
+}
+
+void link_delete(LinkList * head, LinkList * tail, int data) {
+	if (!*head) {
+		printf("%d", "this is empty linklist.");
+	}
+
+	LinkList pcur = *head, pre = *head;
+
+	if ((*head)->data == data) {
+		*head = pcur->next;
+		free(pcur);
+		if ((*head)->next == NULL) {
+			*tail = NULL;
+		}
+	}
+	else {
+		while (pcur) // 数据在链表中 data是尾节点
+		{
+			if (pcur->data == data) {
+				pre->next = pcur->next;
+				free(pcur);
+		
+				if (pcur->next == NULL) { // 为节点删除
+					*tail = pre;
+				}
+				break;
+			}
+			pre = pcur;
+			pcur = pcur->next;
+		}
+		if (!pcur) { // 不存在在链表中
+			printf("the data is not exist linkList.");
+		}
+	}
+}
+
+void print_link(LinkList link) {
+
+	while (link)
+	{
+		printf("%d\t", link->data);
+		link = link->next;
+	}
+}
+
+
 void link_test() {
 	LinkList head, tail, temp;
 
 	head = NULL;
 	tail = NULL;
 	int i;
-	while (scanf("%d", &i) != EOF) {
-		//instert_link_head(&head, &tail, i);
-		instert_link_tail(&head, &tail, i);
-	}
+	//while (scanf("%d", &i) != EOF) {
+	//	//instert_link_head(&head, &tail, i);
+	//	//instert_link_tail(&head, &tail, i);
+	//}
 	/*while (head != NULL) {
 		printf("%d\t", head->data);
 		head = head->next;
 	}*/
 
-	while (tail)
+	/*while (tail)
 	{
 		printf("%d\t", tail->data);
 		tail = tail->next;
-	}
+	}*/
 
+	while (scanf("%d", &i) != EOF) {
+		insert_link_sort(&head, &tail, i);
+		print_link(head);
+
+	}
+	printf("链表中删除\n");
+	while (scanf("%d", &i) != EOF)
+	{
+		// 删除
+		link_delete(&head, &tail, i);
+		print_link(head);
+	}
 }

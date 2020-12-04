@@ -22,7 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{3D223493-B068-4CB0-8D5A-C4FDD9C62E32}</ProjectGuid>
     <RootNamespace>examples</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -41,7 +41,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -126,6 +126,7 @@
   <ItemGroup>
     <ClCompile Include="array.cpp" />
     <ClCompile Include="hw_day2.cpp" />
+    <ClCompile Include="hw_day5.cpp" />
     <ClCompile Include="hw_main.cpp" />
     <ClCompile Include="hw_main_day1.cpp" />
     <ClCompile Include="hw_main_day2.cpp" />
