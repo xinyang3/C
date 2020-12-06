@@ -4,24 +4,26 @@
 
 extern void print();
 
-//void main() {
-//	// hello();
-//
-//	//io();
-//	//keepScan();
-//	//calcute();
-//	//go();
-//
-//	//char * s = {};
-//	//getDayOfYear(s);
-//	//arrayInit();
-//	//arrayDinit();
-//	//calcute_2();
-//	//calcute_3();
-//	//calcute_4();
-//	//print();
-//
-//	//point_db_ary();
-//	link_test();
-//	system("pause");
-//}
+void main() {
+	// hello();
+
+	//io();
+	//keepScan();
+	//calcute();
+	//go();
+
+	//char * s = {};
+	//getDayOfYear(s);
+	//arrayInit();
+	//arrayDinit();
+	//calcute_2();
+	//calcute_3();
+	//calcute_4();
+	//print();
+
+	//point_db_ary();
+	//link_test();
+	//stack_test();
+	queue_test();
+	system("pause");
+}

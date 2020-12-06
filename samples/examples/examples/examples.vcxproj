@@ -87,7 +87,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4007;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,10 +127,11 @@
     <ClCompile Include="array.cpp" />
     <ClCompile Include="hw_day2.cpp" />
     <ClCompile Include="hw_day3.cpp" />
+    <ClCompile Include="hw_day5.cpp" />
     <ClCompile Include="hw_main.cpp" />
-    <ClCompile Include="hw_main_day1.cpp" />
-    <ClCompile Include="hw_main_day2.cpp" />
     <ClCompile Include="link_table.cpp" />
+    <ClCompile Include="queue.cpp" />
+    <ClCompile Include="stack.cpp" />
     <ClCompile Include="struct_test.cpp" />
     <ClCompile Include="while_circle.cpp" />
     <ClCompile Include="function.cpp" />

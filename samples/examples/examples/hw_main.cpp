@@ -4,6 +4,10 @@
 extern void print_chengfa();
 extern void print_lingxing();
 extern void print_lingxing_kong();
+extern void array_test();
+extern void convert_letter();
+extern void character_count();
+extern void convert_jinzhi();
 
 extern void array_cmn_element_call();
 

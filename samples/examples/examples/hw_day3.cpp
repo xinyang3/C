@@ -140,36 +140,36 @@ void revert_words(char * str) {
 }
 
 
-void main() {
-	char from[100] = "abcde\0";
-	char to[] = "abcdef\0";
-	/*strcpy(to, from);
-	printf("%s", to);*/
-
-	/*int resu = strcmp(from, to);
-	printf("%d", resu);*/
-
-	//char * c = strcat(from, to);
-	/*char * c = mystrcat(from, to);
-	printf("%s", from);*/
-
-	// scanf ¶ÁÈë×Ö·û´®
-	/*char c = '\0';
-	char str[200];
-	int i = 0;
-	while (scanf("%c", &c) != EOF) {
-		if (c == '\n') {
-			str[i] = '\0';
-			break;
-		}
-		str[i++] = c;
-	}*/
-
-	char str[100];
-	gets_s(str);
-	
-	//gets_s(c);
-	//printf("%d\n", word_count(c));
-	//print_word(str);
-	revert_words(str);
-}
+//void main() {
+//	char from[100] = "abcde\0";
+//	char to[] = "abcdef\0";
+//	/*strcpy(to, from);
+//	printf("%s", to);*/
+//
+//	/*int resu = strcmp(from, to);
+//	printf("%d", resu);*/
+//
+//	//char * c = strcat(from, to);
+//	/*char * c = mystrcat(from, to);
+//	printf("%s", from);*/
+//
+//	// scanf ¶ÁÈë×Ö·û´®
+//	/*char c = '\0';
+//	char str[200];
+//	int i = 0;
+//	while (scanf("%c", &c) != EOF) {
+//		if (c == '\n') {
+//			str[i] = '\0';
+//			break;
+//		}
+//		str[i++] = c;
+//	}*/
+//
+//	char str[100];
+//	gets_s(str);
+//	
+//	//gets_s(c);
+//	//printf("%d\n", word_count(c));
+//	//print_word(str);
+//	revert_words(str);
+//}

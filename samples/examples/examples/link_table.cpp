@@ -4,6 +4,7 @@
 
 typedef struct LNode {
 	int data;
+	float score = 0.00;
 	struct LNode * next;
 } LNode, * LinkList;
 
@@ -108,11 +109,26 @@ void link_delete(LinkList * head, LinkList * tail, int data) {
 	}
 }
 
+void link_modify(LinkList head, int number, float score) {
+	if (!(head)->next) {
+		printf("link is empty.");
+	}
+	else {
+		while (head) {
+			if (head->data == number) {
+				head->score = score;
+				break;
+			}
+			head = head->next;
+		}
+	}
+}
+
 void print_link(LinkList link) {
 
 	while (link)
 	{
-		printf("%d\t", link->data);
+		printf("%d\t%f\n", link->data, link->score);
 		link = link->next;
 	}
 }
@@ -142,13 +158,20 @@ void link_test() {
 	while (scanf("%d", &i) != EOF) {
 		insert_link_sort(&head, &tail, i);
 		print_link(head);
-
 	}
-	printf("链表中删除\n");
-	while (scanf("%d", &i) != EOF)
-	{
-		// 删除
-		link_delete(&head, &tail, i);
+	//printf("链表中删除\n");
+	//while (scanf("%d", &i) != EOF)
+	//{
+	//	// 删除
+	//	link_delete(&head, &tail, i);
+	//	print_link(head);
+	//}
+
+	int number;
+	float score;
+	printf("修改的学分");
+	while (scanf("%d %f", &number, &score) != EOF) {
+		link_modify(head, number, score);
 		print_link(head);
 	}
 }

@@ -33,3 +33,5 @@ extern void print_chengfa();
 
 
 extern void link_test();
+extern void stack_test();
+extern void queue_test();
