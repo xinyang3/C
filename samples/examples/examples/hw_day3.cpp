@@ -106,6 +106,39 @@ size_t word_count(char * str) {
 	return count;
 }
 
+void revert_words(char * str) {
+	int length = strlen(str);
+	char * s = (char *)malloc(200 * sizeof(char));
+	// ·´×ª
+	int n = 0;
+	for (int i = length - 1; i >= 0; i--)
+	{
+		s[n++] = str[i];
+	}
+	s[n] = '\0';
+
+	int j = 0;
+	char stemp[100] = " ";
+	for (size_t i = 0; i <= n; i++)
+	{
+		
+		if (s[i] != ' ') {
+			stemp[j] = s[i];
+			j++;
+		}
+		else if (s[i] == ' ' || s[i] == '\0') {
+			while (j >= 0)
+			{
+				printf("%c", stemp[j]);
+				stemp[j] = '\0';
+				j--;
+			}
+			j = 0;
+			printf("%c", s[i]);
+		}
+	}
+}
+
 
 void main() {
 	char from[100] = "abcde\0";
@@ -120,10 +153,23 @@ void main() {
 	/*char * c = mystrcat(from, to);
 	printf("%s", from);*/
 
-	char c[] = "\0";
-	scanf("%s\n", c);
-	//gets_s(c);
-	printf("%d\n", word_count(c));
-	print_word(c);
+	// scanf ¶ÁÈë×Ö·û´®
+	/*char c = '\0';
+	char str[200];
+	int i = 0;
+	while (scanf("%c", &c) != EOF) {
+		if (c == '\n') {
+			str[i] = '\0';
+			break;
+		}
+		str[i++] = c;
+	}*/
 
+	char str[100];
+	gets_s(str);
+	
+	//gets_s(c);
+	//printf("%d\n", word_count(c));
+	//print_word(str);
+	revert_words(str);
 }
