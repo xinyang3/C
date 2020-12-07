@@ -128,6 +128,7 @@
     <ClCompile Include="hw_day2.cpp" />
     <ClCompile Include="hw_day3.cpp" />
     <ClCompile Include="hw_day5.cpp" />
+    <ClCompile Include="hw_day6.cpp" />
     <ClCompile Include="hw_main.cpp" />
     <ClCompile Include="link_table.cpp" />
     <ClCompile Include="queue.cpp" />
