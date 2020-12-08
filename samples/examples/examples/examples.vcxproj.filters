@@ -81,6 +81,9 @@
     <ClCompile Include="hw_day6.cpp">
       <Filter>源文件\homeworks</Filter>
     </ClCompile>
+    <ClCompile Include="sort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="extern_declare.h">

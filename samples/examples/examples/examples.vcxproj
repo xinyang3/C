@@ -132,6 +132,7 @@
     <ClCompile Include="hw_main.cpp" />
     <ClCompile Include="link_table.cpp" />
     <ClCompile Include="queue.cpp" />
+    <ClCompile Include="sort.cpp" />
     <ClCompile Include="stack.cpp" />
     <ClCompile Include="struct_test.cpp" />
     <ClCompile Include="while_circle.cpp" />

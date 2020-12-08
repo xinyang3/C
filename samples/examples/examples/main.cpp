@@ -24,6 +24,8 @@ void main() {
 	//point_db_ary();
 	//link_test();
 	//stack_test();
-	queue_test();
+	//queue_test();
+
+	sort();
 	system("pause");
 }
