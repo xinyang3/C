@@ -23,6 +23,24 @@ void sort_maopao(int numbers[]) {
 	}
 }
 
+void sort_select(int numbers[]) { // µ¹ÐòºÍÕýÐò²î±ð
+	int position = 0;
+
+	int i = 0, j = 0;
+	for (i = 0; i < N; i++)
+	{
+		for (j = 0; j < N - i; j++)
+		{
+			if (numbers[j] > numbers[position]) {
+				position = j;
+			}
+		}
+		swap(&numbers[position], &numbers[N- i -1]);
+	}
+}
+void sort_insert(int numbers[]) {
+
+}
 
 void print(int numbers[]) {
 	for (size_t i = 0; i < N; i++)
@@ -41,6 +59,7 @@ void sort() {
 	}
 	print(numbers);
 
-	sort_maopao(numbers);
+	//sort_maopao(numbers);
+	sort_select(numbers);
 	print(numbers);
 }
