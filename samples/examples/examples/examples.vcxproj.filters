@@ -87,6 +87,9 @@
     <ClCompile Include="tree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="hw_day7.cpp">
+      <Filter>源文件\homeworks</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="extern_declare.h">

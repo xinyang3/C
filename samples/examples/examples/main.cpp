@@ -22,10 +22,11 @@ void main() {
 	//print();
 
 	//point_db_ary();
-	//link_test();
+	link_test();
 	//stack_test();
 	//queue_test();
 
-	sort();
+	//sort();
+	//link_tree();
 	system("pause");
 }

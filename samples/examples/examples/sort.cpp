@@ -122,13 +122,43 @@ void sort_heap(int A[], int length) {
 	}
 }
 
+void sort_count(int A[], int length) {
+	/*int max = A[0], min = A[0];
+	for (size_t i = 0; i < length; i++)
+	{
+		if (A[i] > max) {
+			max = A[i];
+		}
+		if (A[i] < min) {
+			min = A[i];
+		}
+	}*/
+	
+	int array_count[N] = {0};
+	int array_sort[N] = { 0 };
+	for (size_t i = 0; i < length; i++)
+	{
+		array_count[A[i]] ++;
+	}
+	for (size_t i = 1; i < length; i++)
+	{
+		array_count[i] = array_count[i] + array_count[i - 1];
+	}
+	print(array_count);
+	for (size_t i = length; i > 0; i--)
+	{
+		array_sort[array_count[A[i-1]] - 1] = A[i-1];
+	}
+	print(array_sort);
+}
+
 
 void sort() {
 	int numbers[N];
 	srand(time(NULL));
 	for (size_t i = 0; i < N; i++)
 	{
-		int num =  rand() % 1000;
+		int num =  rand() % 10;
 		numbers[i] = num;
 	}
 	print(numbers);
@@ -136,6 +166,7 @@ void sort() {
 	//sort_maopao(numbers);
 	//sort_select(numbers);
 	//sort_quick(numbers, 0, N - 1);
-	sort_heap(numbers, N);
+	//sort_heap(numbers, N);
+	sort_count(numbers, N);
 	print(numbers);
 }

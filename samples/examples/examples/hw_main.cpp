@@ -10,11 +10,13 @@ extern void character_count();
 extern void convert_jinzhi();
 
 extern void array_cmn_element_call();
+extern void link_tests();
 
 //void main() {
 //	//print_chengfa();
 //	//print_lingxing();
 //	//print_lingxing_kong();
-//	array_cmn_element_call();
+//	//array_cmn_element_call();
+//	link_tests();
 //	system("pause");
 //}

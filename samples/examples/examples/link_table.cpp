@@ -37,7 +37,7 @@ void instert_link_tail(LNode** head, LinkList* tail, int data) {
 	}
 }
 
-void insert_link_sort(LinkList * head, LinkList * tail, int data) {
+void insert_link_sort2(LinkList * head, LinkList * tail, int data) {
 	LinkList nplink = (LinkList)calloc(1, sizeof(LNode));
 	nplink->data = data;
 	nplink->next = NULL;
@@ -132,14 +132,66 @@ void print_link(LinkList link) {
 		link = link->next;
 	}
 }
+void print_link2(LinkList link) {
 
+	while (link)
+	{
+		printf("%d\t", link->data);
+		link = link->next;
+	}
+}
+
+void insert_link_sort3(LinkList ahead, LinkList atail, LinkList bhead) {
+	while (bhead)
+	{
+		insert_link_sort2(&ahead, &atail, bhead->data);
+
+		bhead = bhead->next;
+	}
+}
+
+// 链表逆序
+void link_revert(LinkList ahead, LinkList atail, LinkList bhead, LinkList btail) {
+	// 链表头插法
+	while (ahead) {
+		instert_link_head(&bhead, &btail, ahead->data);
+		ahead = ahead->next;
+	}
+	print_link2(bhead);
+}
+
+// 链表长度
+int get_link_length(LinkList head) {
+	int length = 0;
+	LinkList ahead = head;
+	while (ahead)
+	{
+		ahead = ahead->next;
+		length++;
+	}
+	printf("length=%d\n", length);
+	return length;
+}
+// 按序号获取节点
+void get_link_byIndex(LinkList ahead, int index) {
+	int inx = 0;
+	while (ahead)
+	{
+		ahead = ahead->next;
+		inx++;
+		if (inx == index) {
+			printf("%d", ahead->data);
+			break;
+		}
+	}
+}
 
 void link_test() {
 	LinkList head, tail, temp;
 
 	head = NULL;
 	tail = NULL;
-	int i;
+	int i = 0;
 	//while (scanf("%d", &i) != EOF) {
 	//	//instert_link_head(&head, &tail, i);
 	//	//instert_link_tail(&head, &tail, i);
@@ -154,11 +206,24 @@ void link_test() {
 		printf("%d\t", tail->data);
 		tail = tail->next;
 	}*/
-
+	printf("输入lina\n");
 	while (scanf("%d", &i) != EOF) {
-		insert_link_sort(&head, &tail, i);
-		print_link(head);
+		insert_link_sort2(&head, &tail, i);
+		print_link2(head);
 	}
+	//printf("输入linb\n");
+	LinkList bhead = NULL, btail = NULL;
+	/*while (scanf("%d", &i) != EOF) {
+		insert_link_sort2(&bhead, &btail, i);
+		print_link2(bhead);
+	}*/
+	//insert_link_sort3(head, tail, bhead);
+	//print_link2(head);
+
+
+	//link_revert(head, tail, bhead, btail);
+	int length = get_link_length(head);
+	get_link_byIndex(head, length - 4);
 	//printf("链表中删除\n");
 	//while (scanf("%d", &i) != EOF)
 	//{
@@ -167,11 +232,11 @@ void link_test() {
 	//	print_link(head);
 	//}
 
-	int number;
+	/*int number;
 	float score;
 	printf("修改的学分");
 	while (scanf("%d %f", &number, &score) != EOF) {
 		link_modify(head, number, score);
 		print_link(head);
-	}
+	}*/
 }
