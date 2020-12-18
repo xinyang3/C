@@ -69,7 +69,7 @@ LNode GetElem(LinkList &L, int i) {
   }
   return p;
 }
-
+// 根据元素获取节点
 LNode LocateElem (LinkList &L, Elemtype e) {
   int i = 0;
   LNode * p = L;
@@ -91,6 +91,19 @@ int Length (LinkList &L) {
   }
   return length;
 }
+// 链表逆序
+void ListRevert(LinkList &L, LinkList &NL) {
+  LNode * p = L;
+  // LNode * q = NL->next;
+  while(p->next){
+    p = p->next;
+
+    LNode * r = p;
+    r->next = NL->next; 
+    NL->next = r; // 头插法
+  }
+}
+
 
 // 不带头
 bool ListInsert (LinkList &L, i, Elemtype e) {
