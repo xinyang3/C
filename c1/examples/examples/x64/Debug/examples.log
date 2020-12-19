@@ -1,5 +1,0 @@
-﻿  link_table.cpp
-d:\workspace\cworks\samples\examples\examples\link_table.cpp(79): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“const char *”
-d:\workspace\cworks\samples\examples\examples\link_table.cpp(79): warning C4313: “printf”: 格式字符串中的“%d”与“const char *”类型的参数 1 冲突
-d:\workspace\cworks\samples\examples\examples\link_table.cpp(190): warning C4101: “temp”: 未引用的局部变量
-  examples.vcxproj -> D:\workspace\cworks\samples\examples\x64\Debug\examples.exe
