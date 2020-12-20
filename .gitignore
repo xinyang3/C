@@ -3,3 +3,9 @@
 /samples/examples/examples/Debug/**
 /samples/examples/x64/**
 /samples/examples/examples/x64/**
+
+/c1/examples/.vs/*
+/c1/examples/Debug/*
+/c1/examples/examples/Debug/**
+/c1/examples/x64/**
+/c1/examples/examples/x64/**
