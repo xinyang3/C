@@ -1,0 +1,14 @@
+2.2.3
+
+AABDA CCCCBD
+
+2.3.7
+
+BBCDA <u>DCDC C</u>
+
+BCDAD BDDCC
+
+CCDCB
+
+error: 6 7- 10 11 19 24 25
+
