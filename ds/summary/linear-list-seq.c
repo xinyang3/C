@@ -1,9 +1,9 @@
 /*
- * @Author: xinyang3
+ * @Author: 线性表顺序
  * @Date: 2020-12-17 18:56
  * @Descripttion: awesome description
  * @LastEditors: xinyang3
- * @LastEditTime: 2020-12-17 19:54
+ * @LastEditTime: 2020-12-18 18:27
  */
 
 #define MAXSIZE 10
